@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/devel
+
+Name: robot_self_filter
+Description: Description of robot_self_filter
+Version: 0.1.30
+Cflags: -I/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/robot_self_filter/include -I/usr/include/bullet
+Libs: -L/home/andrewandjasmine/movo_ws/devel/lib -lrobot_geometric_shapes -lrobot_self_filter -lBulletSoftBody -lBulletDynamics -lBulletCollision -lLinearMath
+Requires: roscpp tf filters sensor_msgs urdf resource_retriever visualization_msgs pcl_ros

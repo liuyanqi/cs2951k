@@ -1,0 +1,6 @@
+# CMake generated Testfile for 
+# Source directory: /home/andrewandjasmine/movo_ws/src/movo_common/movo_navigation/movo_navigation
+# Build directory: /home/andrewandjasmine/movo_ws/build/movo_common/movo_navigation/movo_navigation
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

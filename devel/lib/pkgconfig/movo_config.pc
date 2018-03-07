@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/devel
+
+Name: movo_config
+Description: Description of movo_config
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/andrewandjasmine/movo_ws/devel/lib 
+Requires: 

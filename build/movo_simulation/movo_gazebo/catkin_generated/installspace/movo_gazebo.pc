@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/install
+
+Name: movo_gazebo
+Description: Description of movo_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/andrewandjasmine/movo_ws/install/lib 
+Requires: 

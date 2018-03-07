@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/devel
+
+Name: kinect2_bridge
+Description: Description of kinect2_bridge
+Version: 0.0.1
+Cflags: -I/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/iai_kinect2/kinect2_bridge/include
+Libs: -L/home/andrewandjasmine/movo_ws/devel/lib 
+Requires: kinect2_registration

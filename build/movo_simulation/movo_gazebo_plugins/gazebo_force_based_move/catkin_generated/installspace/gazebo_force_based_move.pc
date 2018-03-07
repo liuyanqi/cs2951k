@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/install
+
+Name: gazebo_force_based_move
+Description: Description of gazebo_force_based_move
+Version: 0.0.1
+Cflags: -I/home/andrewandjasmine/movo_ws/install/include
+Libs: -L/home/andrewandjasmine/movo_ws/install/lib 
+Requires: roscpp std_msgs geometry_msgs nav_msgs tf message_runtime

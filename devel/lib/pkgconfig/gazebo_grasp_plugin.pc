@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/devel
+
+Name: gazebo_grasp_plugin
+Description: Description of gazebo_grasp_plugin
+Version: 1.0.1
+Cflags: -I/home/andrewandjasmine/movo_ws/src/movo_simulation/movo_gazebo_plugins/gazebo_grasp_plugin/include
+Libs: -L/home/andrewandjasmine/movo_ws/devel/lib -lgazebo_grasp_fix
+Requires: gazebo_ros geometry_msgs roscpp std_msgs

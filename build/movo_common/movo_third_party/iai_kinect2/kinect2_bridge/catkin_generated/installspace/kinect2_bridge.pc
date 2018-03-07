@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/install
+
+Name: kinect2_bridge
+Description: Description of kinect2_bridge
+Version: 0.0.1
+Cflags: -I/home/andrewandjasmine/movo_ws/install/include
+Libs: -L/home/andrewandjasmine/movo_ws/install/lib 
+Requires: kinect2_registration

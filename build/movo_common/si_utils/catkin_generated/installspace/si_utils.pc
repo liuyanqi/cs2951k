@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/install
+
+Name: si_utils
+Description: Description of si_utils
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/andrewandjasmine/movo_ws/install/lib 
+Requires: 

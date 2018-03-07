@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/devel
+
+Name: movo_remote_teleop
+Description: Description of movo_remote_teleop
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/andrewandjasmine/movo_ws/devel/lib 
+Requires: 

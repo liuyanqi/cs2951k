@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/devel
+
+Name: eband_local_planner
+Description: Description of eband_local_planner
+Version: 0.3.1
+Cflags: -I/home/andrewandjasmine/movo_ws/devel/include -I/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/eband_local_planner/include
+Libs: -L/home/andrewandjasmine/movo_ws/devel/lib -leband_local_planner
+Requires: base_local_planner control_toolbox costmap_2d geometry_msgs nav_core nav_msgs pluginlib roscpp tf tf_conversions dynamic_reconfigure
