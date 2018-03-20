@@ -365,53 +365,53 @@ double yaw_correction_factor;
 
 
 
-//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_x_vel_limit_mps;
-//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_y_vel_limit_mps;
-//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_accel_limit_mps2;
-//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_yaw_rate_limit_rps;
-//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_yaw_accel_limit_rps2;
-//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_arm_vel_limit;
-//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_pan_tilt_vel_limit;
-//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double teleop_linear_actuator_vel_limit;
-//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double x_vel_limit_mps;
-//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double y_vel_limit_mps;
-//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double accel_limit_mps2;
-//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double decel_limit_mps2;
-//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double dtz_decel_limit_mps2;
-//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double yaw_rate_limit_rps;
-//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double yaw_accel_limit_rps2;
-//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double wheel_diameter_m;
-//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double wheel_base_length_m;
-//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double wheel_track_width_m;
-//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double gear_ratio;
-//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       bool motion_while_charging;
-//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       int motion_ctl_input_filter;
-//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double linear_actuator_vel_limit_mps;
-//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double strafe_correction_factor;
-//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       double yaw_correction_factor;
 //#line 218 "/opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -552,85 +552,85 @@ double yaw_correction_factor;
     {
 movoConfig::GroupDescription<movoConfig::DEFAULT, movoConfig> Default("Default", "", 0, 0, true, &movoConfig::groups);
 movoConfig::GroupDescription<movoConfig::DEFAULT::TELEOP_PAREMETERS, movoConfig::DEFAULT> Teleop_Paremeters("Teleop_Paremeters", "", 0, 1, true, &movoConfig::DEFAULT::teleop_paremeters);
-//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_x_vel_limit_mps = 0.0;
-//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_x_vel_limit_mps = 2.0;
-//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_x_vel_limit_mps = 0.5;
-//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_x_vel_limit_mps", "double", 2, "Maximum velocity in m/s for teleop", "", &movoConfig::teleop_x_vel_limit_mps)));
-//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 9 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_x_vel_limit_mps", "double", 2, "Maximum velocity in m/s for teleop", "", &movoConfig::teleop_x_vel_limit_mps)));
-//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_y_vel_limit_mps = 0.0;
-//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_y_vel_limit_mps = 1.0;
-//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_y_vel_limit_mps = 0.5;
-//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_y_vel_limit_mps", "double", 2, "Maximum velocity in m/s for teleop", "", &movoConfig::teleop_y_vel_limit_mps)));
-//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 10 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_y_vel_limit_mps", "double", 2, "Maximum velocity in m/s for teleop", "", &movoConfig::teleop_y_vel_limit_mps)));
-//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_accel_limit_mps2 = 0.05;
-//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_accel_limit_mps2 = 2.5;
-//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_accel_limit_mps2 = 0.5;
-//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_accel_limit_mps2", "double", 2, "Maximum velocity in m/s for teleop", "", &movoConfig::teleop_accel_limit_mps2)));
-//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 11 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_accel_limit_mps2", "double", 2, "Maximum velocity in m/s for teleop", "", &movoConfig::teleop_accel_limit_mps2)));
-//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_yaw_rate_limit_rps = 0.0;
-//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_yaw_rate_limit_rps = 3.2;
-//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_yaw_rate_limit_rps = 1.0;
-//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_yaw_rate_limit_rps", "double", 2, "Maximum yaw_rate in rad/s for teleop", "", &movoConfig::teleop_yaw_rate_limit_rps)));
-//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 12 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_yaw_rate_limit_rps", "double", 2, "Maximum yaw_rate in rad/s for teleop", "", &movoConfig::teleop_yaw_rate_limit_rps)));
-//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_yaw_accel_limit_rps2 = 0.063;
-//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_yaw_accel_limit_rps2 = 6.28;
-//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_yaw_accel_limit_rps2 = 1.0;
-//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_yaw_accel_limit_rps2", "double", 2, "Maximum yaw acceleration in rad/s^2 for teleop", "", &movoConfig::teleop_yaw_accel_limit_rps2)));
-//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 13 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_yaw_accel_limit_rps2", "double", 2, "Maximum yaw acceleration in rad/s^2 for teleop", "", &movoConfig::teleop_yaw_accel_limit_rps2)));
-//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_arm_vel_limit = 0.0;
-//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_arm_vel_limit = 0.2;
-//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_arm_vel_limit = 0.1;
-//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_arm_vel_limit", "double", 2, "Maximum arm cartesian velocity in cm/s", "", &movoConfig::teleop_arm_vel_limit)));
-//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 15 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_arm_vel_limit", "double", 2, "Maximum arm cartesian velocity in cm/s", "", &movoConfig::teleop_arm_vel_limit)));
-//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_pan_tilt_vel_limit = 0.0;
-//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_pan_tilt_vel_limit = 0.872;
-//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_pan_tilt_vel_limit = 0.524;
-//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_pan_tilt_vel_limit", "double", 2, "Maximum pan_tilt velocity in rad/s for teleop", "", &movoConfig::teleop_pan_tilt_vel_limit)));
-//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 17 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_pan_tilt_vel_limit", "double", 2, "Maximum pan_tilt velocity in rad/s for teleop", "", &movoConfig::teleop_pan_tilt_vel_limit)));
-//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.teleop_linear_actuator_vel_limit = 0.0;
-//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.teleop_linear_actuator_vel_limit = 0.1;
-//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.teleop_linear_actuator_vel_limit = 0.05;
-//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Teleop_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_linear_actuator_vel_limit", "double", 2, "Maximum linear actuator velocity limit in m/s for teleop", "", &movoConfig::teleop_linear_actuator_vel_limit)));
-//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 19 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("teleop_linear_actuator_vel_limit", "double", 2, "Maximum linear actuator velocity limit in m/s for teleop", "", &movoConfig::teleop_linear_actuator_vel_limit)));
 //#line 123 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Teleop_Paremeters.convertParams();
@@ -639,145 +639,145 @@ movoConfig::GroupDescription<movoConfig::DEFAULT::TELEOP_PAREMETERS, movoConfig:
 //#line 123 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(movoConfig::AbstractGroupDescriptionConstPtr(new movoConfig::GroupDescription<movoConfig::DEFAULT::TELEOP_PAREMETERS, movoConfig::DEFAULT>(Teleop_Paremeters)));
 movoConfig::GroupDescription<movoConfig::DEFAULT::MACHINE_CONFIGURATION_PAREMETERS, movoConfig::DEFAULT> Machine_Configuration_Paremeters("Machine_Configuration_Paremeters", "", 0, 2, true, &movoConfig::DEFAULT::machine_configuration_paremeters);
-//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.x_vel_limit_mps = 0.0;
-//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.x_vel_limit_mps = 2.0;
-//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.x_vel_limit_mps = 1.0;
-//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("x_vel_limit_mps", "double", 4, "Maximum forward velocity in m/s for Movo", "", &movoConfig::x_vel_limit_mps)));
-//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 23 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("x_vel_limit_mps", "double", 4, "Maximum forward velocity in m/s for Movo", "", &movoConfig::x_vel_limit_mps)));
-//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.y_vel_limit_mps = 0.0;
-//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.y_vel_limit_mps = 1.0;
-//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.y_vel_limit_mps = 0.5;
-//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("y_vel_limit_mps", "double", 4, "Maximum strafe velocity in m/s for Movo", "", &movoConfig::y_vel_limit_mps)));
-//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 24 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("y_vel_limit_mps", "double", 4, "Maximum strafe velocity in m/s for Movo", "", &movoConfig::y_vel_limit_mps)));
-//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.accel_limit_mps2 = 0.05;
-//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.accel_limit_mps2 = 2.5;
-//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.accel_limit_mps2 = 0.5;
-//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("accel_limit_mps2", "double", 4, "Maximum acceleration in m/s^2 for Movo", "", &movoConfig::accel_limit_mps2)));
-//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 25 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("accel_limit_mps2", "double", 4, "Maximum acceleration in m/s^2 for Movo", "", &movoConfig::accel_limit_mps2)));
-//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.decel_limit_mps2 = 0.05;
-//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.decel_limit_mps2 = 2.5;
-//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.decel_limit_mps2 = 0.5;
-//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("decel_limit_mps2", "double", 4, "Maximum deceleration in m/s^2 for Movo", "", &movoConfig::decel_limit_mps2)));
-//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 26 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("decel_limit_mps2", "double", 4, "Maximum deceleration in m/s^2 for Movo", "", &movoConfig::decel_limit_mps2)));
-//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.dtz_decel_limit_mps2 = 0.981;
-//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.dtz_decel_limit_mps2 = 2.5;
-//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.dtz_decel_limit_mps2 = 1.0;
-//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("dtz_decel_limit_mps2", "double", 4, "Maximum emergency DTZ deceleration in m/s^2 for Movo", "", &movoConfig::dtz_decel_limit_mps2)));
-//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 27 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("dtz_decel_limit_mps2", "double", 4, "Maximum emergency DTZ deceleration in m/s^2 for Movo", "", &movoConfig::dtz_decel_limit_mps2)));
-//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.yaw_rate_limit_rps = 0.0;
-//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.yaw_rate_limit_rps = 3.2;
-//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.yaw_rate_limit_rps = 1.0;
-//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("yaw_rate_limit_rps", "double", 4, "Maximum yaw rate in rad/s for Movo", "", &movoConfig::yaw_rate_limit_rps)));
-//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 28 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("yaw_rate_limit_rps", "double", 4, "Maximum yaw rate in rad/s for Movo", "", &movoConfig::yaw_rate_limit_rps)));
-//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.yaw_accel_limit_rps2 = 0.063;
-//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.yaw_accel_limit_rps2 = 6.28;
-//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.yaw_accel_limit_rps2 = 1.0;
-//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("yaw_accel_limit_rps2", "double", 4, "Maximum yaw acceleration in rad/s^2 for Movo", "", &movoConfig::yaw_accel_limit_rps2)));
-//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 29 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("yaw_accel_limit_rps2", "double", 4, "Maximum yaw acceleration in rad/s^2 for Movo", "", &movoConfig::yaw_accel_limit_rps2)));
-//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.wheel_diameter_m = 0.1324;
-//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.wheel_diameter_m = 0.1724;
-//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.wheel_diameter_m = 0.1524;
-//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("wheel_diameter_m", "double", 4, "wheel diameter in m for Movo", "", &movoConfig::wheel_diameter_m)));
-//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 30 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("wheel_diameter_m", "double", 4, "wheel diameter in m for Movo", "", &movoConfig::wheel_diameter_m)));
-//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.wheel_base_length_m = 0.48173;
-//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.wheel_base_length_m = 0.52173;
-//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.wheel_base_length_m = 0.50173;
-//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("wheel_base_length_m", "double", 4, "Distance between front and rear contact patch in m for Movo", "", &movoConfig::wheel_base_length_m)));
-//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 31 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("wheel_base_length_m", "double", 4, "Distance between front and rear contact patch in m for Movo", "", &movoConfig::wheel_base_length_m)));
-//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.wheel_track_width_m = 0.40835;
-//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.wheel_track_width_m = 0.44835;
-//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.wheel_track_width_m = 0.42835;
-//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("wheel_track_width_m", "double", 4, "Distance between left and right contact patch in m for Movo", "", &movoConfig::wheel_track_width_m)));
-//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 32 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("wheel_track_width_m", "double", 4, "Distance between left and right contact patch in m for Movo", "", &movoConfig::wheel_track_width_m)));
-//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.gear_ratio = 1.0;
-//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.gear_ratio = 50.0;
-//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.gear_ratio = 5.0;
-//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("gear_ratio", "double", 4, "Input to ouput gear ratio for Movo", "", &movoConfig::gear_ratio)));
-//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 33 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("gear_ratio", "double", 4, "Input to ouput gear ratio for Movo", "", &movoConfig::gear_ratio)));
-//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.motion_while_charging = 0;
-//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.motion_while_charging = 1;
-//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.motion_while_charging = 0;
-//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<bool>("motion_while_charging", "bool", 4, "Allow motion with charger connected", "", &movoConfig::motion_while_charging)));
-//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 35 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<bool>("motion_while_charging", "bool", 4, "Allow motion with charger connected", "", &movoConfig::motion_while_charging)));
-//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.motion_ctl_input_filter = -2147483648;
-//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.motion_ctl_input_filter = 2147483647;
-//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.motion_ctl_input_filter = 0;
-//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
-      Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<int>("motion_ctl_input_filter", "int", 4, "Motion Controller Input Filter Cutoff", "{'enum_description': 'Motion controller input filter cutoff frequency', 'enum': [{'srcline': 39, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'filter_10Hz_Cutoff'}, {'srcline': 40, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'filter_4Hz_Cutoff'}, {'srcline': 41, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'filter_1Hz_Cutoff'}, {'srcline': 42, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 4, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p5Hz_Cutoff'}, {'srcline': 43, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 8, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p2Hz_Cutoff'}]}", &movoConfig::motion_ctl_input_filter)));
-//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
-      __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<int>("motion_ctl_input_filter", "int", 4, "Motion Controller Input Filter Cutoff", "{'enum_description': 'Motion controller input filter cutoff frequency', 'enum': [{'srcline': 39, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'filter_10Hz_Cutoff'}, {'srcline': 40, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'filter_4Hz_Cutoff'}, {'srcline': 41, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'filter_1Hz_Cutoff'}, {'srcline': 42, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 4, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p5Hz_Cutoff'}, {'srcline': 43, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 8, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p2Hz_Cutoff'}]}", &movoConfig::motion_ctl_input_filter)));
-//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
+      Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<int>("motion_ctl_input_filter", "int", 4, "Motion Controller Input Filter Cutoff", "{'enum_description': 'Motion controller input filter cutoff frequency', 'enum': [{'srcline': 39, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'filter_10Hz_Cutoff'}, {'srcline': 40, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'filter_4Hz_Cutoff'}, {'srcline': 41, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'filter_1Hz_Cutoff'}, {'srcline': 42, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 4, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p5Hz_Cutoff'}, {'srcline': 43, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 8, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p2Hz_Cutoff'}]}", &movoConfig::motion_ctl_input_filter)));
+//#line 45 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
+      __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<int>("motion_ctl_input_filter", "int", 4, "Motion Controller Input Filter Cutoff", "{'enum_description': 'Motion controller input filter cutoff frequency', 'enum': [{'srcline': 39, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'filter_10Hz_Cutoff'}, {'srcline': 40, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'filter_4Hz_Cutoff'}, {'srcline': 41, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'filter_1Hz_Cutoff'}, {'srcline': 42, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 4, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p5Hz_Cutoff'}, {'srcline': 43, 'description': '', 'srcfile': '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg', 'cconsttype': 'const int', 'value': 8, 'ctype': 'int', 'type': 'int', 'name': 'filter_0p2Hz_Cutoff'}]}", &movoConfig::motion_ctl_input_filter)));
+//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.linear_actuator_vel_limit_mps = 0.0;
-//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.linear_actuator_vel_limit_mps = 0.2;
-//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.linear_actuator_vel_limit_mps = 0.1;
-//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Machine_Configuration_Paremeters.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("linear_actuator_vel_limit_mps", "double", 8, "Maximum velocity for the linear actuator", "", &movoConfig::linear_actuator_vel_limit_mps)));
-//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 47 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("linear_actuator_vel_limit_mps", "double", 8, "Maximum velocity for the linear actuator", "", &movoConfig::linear_actuator_vel_limit_mps)));
 //#line 123 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Machine_Configuration_Paremeters.convertParams();
@@ -786,25 +786,25 @@ movoConfig::GroupDescription<movoConfig::DEFAULT::MACHINE_CONFIGURATION_PAREMETE
 //#line 123 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(movoConfig::AbstractGroupDescriptionConstPtr(new movoConfig::GroupDescription<movoConfig::DEFAULT::MACHINE_CONFIGURATION_PAREMETERS, movoConfig::DEFAULT>(Machine_Configuration_Paremeters)));
 movoConfig::GroupDescription<movoConfig::DEFAULT::CORRECTION_FACTORS, movoConfig::DEFAULT> Correction_Factors("Correction_Factors", "", 0, 3, true, &movoConfig::DEFAULT::correction_factors);
-//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.strafe_correction_factor = -0.5;
-//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.strafe_correction_factor = 0.5;
-//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.strafe_correction_factor = 0.0;
-//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Correction_Factors.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("strafe_correction_factor", "double", 16, "factor applied to y odometry components to correct for straying angle variation surface to surface", "", &movoConfig::strafe_correction_factor)));
-//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 50 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("strafe_correction_factor", "double", 16, "factor applied to y odometry components to correct for straying angle variation surface to surface", "", &movoConfig::strafe_correction_factor)));
-//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __min__.yaw_correction_factor = -0.5;
-//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __max__.yaw_correction_factor = 0.5;
-//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __default__.yaw_correction_factor = 0.0;
-//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       Correction_Factors.abstract_parameters.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("yaw_correction_factor", "double", 32, "factor applied to yaw odometry components to correct for straying angle variation surface to surface", "", &movoConfig::yaw_correction_factor)));
-//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 51 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       __param_descriptions__.push_back(movoConfig::AbstractParamDescriptionConstPtr(new movoConfig::ParamDescription<double>("yaw_correction_factor", "double", 32, "factor applied to yaw odometry components to correct for straying angle variation surface to surface", "", &movoConfig::yaw_correction_factor)));
 //#line 123 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Correction_Factors.convertParams();
@@ -891,15 +891,15 @@ movoConfig::GroupDescription<movoConfig::DEFAULT::CORRECTION_FACTORS, movoConfig
     return statics;
   }
 
-//#line 39 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 39 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       const int movo_filter_10Hz_Cutoff = 0;
-//#line 40 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 40 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       const int movo_filter_4Hz_Cutoff = 1;
-//#line 41 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 41 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       const int movo_filter_1Hz_Cutoff = 2;
-//#line 42 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 42 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       const int movo_filter_0p5Hz_Cutoff = 4;
-//#line 43 "/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros/cfg/movo.cfg"
+//#line 43 "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros/cfg/movo.cfg"
       const int movo_filter_0p2Hz_Cutoff = 8;
 }
 

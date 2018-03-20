@@ -67,7 +67,7 @@ set(ira_laser_tools_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(ira_laser_tools_SOURCE_PREFIX /home/andrewandjasmine/movo_ws/src/movo_robot/movo_sensor_filters/ira_laser_tools)
+  set(ira_laser_tools_SOURCE_PREFIX /home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_sensor_filters/ira_laser_tools)
   set(ira_laser_tools_DEVEL_PREFIX /home/andrewandjasmine/movo_ws/devel)
   set(ira_laser_tools_INSTALL_PREFIX "")
   set(ira_laser_tools_PREFIX ${ira_laser_tools_DEVEL_PREFIX})
@@ -103,7 +103,7 @@ if(NOT "/home/andrewandjasmine/movo_ws/devel/include;/usr/local/include/eigen3 "
         message(FATAL_ERROR "Project 'ira_laser_tools' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'furlan <axelfurlan@gmail.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'ira_laser_tools' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/andrewandjasmine/movo_ws/src/movo_robot/movo_sensor_filters/ira_laser_tools/${idir}'.  Ask the maintainer 'furlan <axelfurlan@gmail.com>' to fix it.")
+      message(FATAL_ERROR "Project 'ira_laser_tools' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_sensor_filters/ira_laser_tools/${idir}'.  Ask the maintainer 'furlan <axelfurlan@gmail.com>' to fix it.")
     endif()
     _list_append_unique(ira_laser_tools_INCLUDE_DIRS ${include})
   endforeach()

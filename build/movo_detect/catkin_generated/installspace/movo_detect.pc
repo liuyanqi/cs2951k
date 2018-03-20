@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/install
+
+Name: movo_detect
+Description: Description of movo_detect
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/andrewandjasmine/movo_ws/install/lib 
+Requires: 

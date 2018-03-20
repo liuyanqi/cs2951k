@@ -563,7 +563,7 @@ PROTOBUF_LITE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libprotobuf-lite.so
 PROTOBUF_LITE_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libprotobuf-lite.so
 
 //The Google Protocol Buffers Compiler
-PROTOBUF_PROTOC_EXECUTABLE:FILEPATH=PROTOBUF_PROTOC_EXECUTABLE-NOTFOUND
+PROTOBUF_PROTOC_EXECUTABLE:FILEPATH=/usr/bin/protoc
 
 //Path to a library.
 PROTOBUF_PROTOC_LIBRARY:FILEPATH=PROTOBUF_PROTOC_LIBRARY-NOTFOUND
@@ -626,10 +626,10 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
 //Path to a file.
-_file_name:FILEPATH=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/joint_trajectory_controller/test/joint_trajectory_controller_wrapping.test
+_file_name:FILEPATH=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/joint_trajectory_controller/test/joint_trajectory_controller_wrapping.test
 
 //Path to a file.
-_path_name:FILEPATH=/home/andrewandjasmine/movo_ws/src/movo_robot/movo_upstart/test
+_path_name:FILEPATH=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_upstart/test
 
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/indigo/share/actionlib/cmake
@@ -692,13 +692,13 @@ cv_bridge_DIR:PATH=/opt/ros/indigo/share/cv_bridge/cmake
 dynamic_reconfigure_DIR:PATH=/opt/ros/indigo/share/dynamic_reconfigure/cmake
 
 //Value Computed by CMake
-eband_local_planner_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/eband_local_planner
+eband_local_planner_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/eband_local_planner
 
 //Dependencies for the target
 eband_local_planner_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libbase_local_planner.so;general;/opt/ros/indigo/lib/libtrajectory_planner_ros.so;general;/opt/ros/indigo/lib/libcontrol_toolbox.so;general;/opt/ros/indigo/lib/librealtime_tools.so;general;/opt/ros/indigo/lib/libcostmap_2d.so;general;/opt/ros/indigo/lib/liblayers.so;general;/opt/ros/indigo/lib/liblaser_geometry.so;general;/opt/ros/indigo/lib/libpcl_ros_filters.so;general;/opt/ros/indigo/lib/libpcl_ros_io.so;general;/opt/ros/indigo/lib/libpcl_ros_tf.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;optimized;/usr/lib/libpcl_kdtree.so;debug;/usr/lib/libpcl_kdtree.so;optimized;/usr/lib/libpcl_search.so;debug;/usr/lib/libpcl_search.so;optimized;/usr/lib/libpcl_sample_consensus.so;debug;/usr/lib/libpcl_sample_consensus.so;optimized;/usr/lib/libpcl_filters.so;debug;/usr/lib/libpcl_filters.so;optimized;/usr/lib/libpcl_features.so;debug;/usr/lib/libpcl_features.so;optimized;/usr/lib/libpcl_keypoints.so;debug;/usr/lib/libpcl_keypoints.so;optimized;/usr/lib/libpcl_segmentation.so;debug;/usr/lib/libpcl_segmentation.so;optimized;/usr/lib/libpcl_visualization.so;debug;/usr/lib/libpcl_visualization.so;optimized;/usr/lib/libpcl_outofcore.so;debug;/usr/lib/libpcl_outofcore.so;optimized;/usr/lib/libpcl_registration.so;debug;/usr/lib/libpcl_registration.so;optimized;/usr/lib/libpcl_recognition.so;debug;/usr/lib/libpcl_recognition.so;optimized;/usr/lib/libpcl_surface.so;debug;/usr/lib/libpcl_surface.so;optimized;/usr/lib/libpcl_people.so;debug;/usr/lib/libpcl_people.so;optimized;/usr/lib/libpcl_tracking.so;debug;/usr/lib/libpcl_tracking.so;optimized;/usr/lib/libpcl_apps.so;debug;/usr/lib/libpcl_apps.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;general;/usr/lib/libvtkCommon.so.5.8.0;general;/usr/lib/libvtkRendering.so.5.8.0;general;/usr/lib/libvtkHybrid.so.5.8.0;general;/usr/lib/libvtkCharts.so.5.8.0;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/librosbag.so;general;/opt/ros/indigo/lib/librosbag_storage.so;general;/opt/ros/indigo/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/indigo/lib/libtopic_tools.so;general;/opt/ros/indigo/lib/libvoxel_grid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libtf_conversions.so;general;/opt/ros/indigo/lib/libkdl_conversions.so;general;/opt/ros/indigo/lib/liborocos-kdl.so.1.3.0;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
 
 //Value Computed by CMake
-eband_local_planner_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/eband_local_planner
+eband_local_planner_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/eband_local_planner
 
 //The directory containing a CMake configuration file for filters.
 filters_DIR:PATH=/opt/ros/indigo/share/filters/cmake
@@ -716,19 +716,19 @@ freenect2_LIBRARY:FILEPATH=/usr/local/lib/libfreenect2.so
 gazebo_DIR:PATH=/usr/share/gazebo/cmake
 
 //Value Computed by CMake
-gazebo_force_based_move_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_simulation/movo_gazebo_plugins/gazebo_force_based_move
+gazebo_force_based_move_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_simulation/movo_gazebo_plugins/gazebo_force_based_move
 
 //Value Computed by CMake
-gazebo_force_based_move_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_simulation/movo_gazebo_plugins/gazebo_force_based_move
+gazebo_force_based_move_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_simulation/movo_gazebo_plugins/gazebo_force_based_move
 
 //Dependencies for the target
 gazebo_grasp_fix_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libgazebo.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_ccd.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_common.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gui.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gui_building.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gui_viewers.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_math.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_msgs.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_ode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_opcode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_physics.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_physics_ode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_rendering.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_selection_buffer.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_sensors.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_skyx.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_transport.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_util.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_player.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_rendering_deferred.so;optimized;/usr/lib/x86_64-linux-gnu/libprotobuf.so;debug;/usr/lib/x86_64-linux-gnu/libprotobuf.so;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libsdformat.so;
 
 //Value Computed by CMake
-gazebo_grasp_plugin_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_simulation/movo_gazebo_plugins/gazebo_grasp_plugin
+gazebo_grasp_plugin_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_simulation/movo_gazebo_plugins/gazebo_grasp_plugin
 
 //Value Computed by CMake
-gazebo_grasp_plugin_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_simulation/movo_gazebo_plugins/gazebo_grasp_plugin
+gazebo_grasp_plugin_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_simulation/movo_gazebo_plugins/gazebo_grasp_plugin
 
 //The directory containing a CMake configuration file for gazebo_msgs.
 gazebo_msgs_DIR:PATH=/opt/ros/indigo/share/gazebo_msgs/cmake
@@ -758,13 +758,13 @@ genpy_DIR:PATH=/opt/ros/indigo/share/genpy/cmake
 geometry_msgs_DIR:PATH=/opt/ros/indigo/share/geometry_msgs/cmake
 
 //Value Computed by CMake
-grasp_msgs_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/grasp_msgs
+grasp_msgs_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/grasp_msgs
 
 //The directory containing a CMake configuration file for grasp_msgs.
 grasp_msgs_DIR:PATH=/home/andrewandjasmine/movo_ws/devel/share/grasp_msgs/cmake
 
 //Value Computed by CMake
-grasp_msgs_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/grasp_msgs
+grasp_msgs_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/grasp_msgs
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/gtest
@@ -795,37 +795,37 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 hardware_interface_DIR:PATH=/opt/ros/indigo/share/hardware_interface/cmake
 
 //Value Computed by CMake
-head_action_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/point_head_action
+head_action_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/point_head_action
 
 //Value Computed by CMake
-head_action_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/point_head_action
+head_action_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/point_head_action
 
 //Value Computed by CMake
-iai_kinect2_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/iai_kinect2/iai_kinect2
+iai_kinect2_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/iai_kinect2/iai_kinect2
 
 //Value Computed by CMake
-iai_kinect2_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/iai_kinect2/iai_kinect2
+iai_kinect2_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/iai_kinect2/iai_kinect2
 
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/indigo/share/image_transport/cmake
 
 //Value Computed by CMake
-ira_laser_tools_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_robot/movo_sensor_filters/ira_laser_tools
+ira_laser_tools_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_robot/movo_sensor_filters/ira_laser_tools
 
 //Value Computed by CMake
-ira_laser_tools_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_robot/movo_sensor_filters/ira_laser_tools
+ira_laser_tools_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_sensor_filters/ira_laser_tools
 
 //Dependencies for the target
 joint_state_listener_LIB_DEPENDS:STATIC=general;robot_state_publisher_solver;general;orocos-kdl;
 
 //Value Computed by CMake
-joint_trajectory_controller_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/joint_trajectory_controller
+joint_trajectory_controller_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/joint_trajectory_controller
 
 //Dependencies for the target
 joint_trajectory_controller_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/opt/ros/indigo/lib/librosconsole_bridge.so;general;/opt/ros/indigo/lib/libcontrol_toolbox.so;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libcontroller_manager.so;general;/opt/ros/indigo/lib/librealtime_tools.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;
 
 //Value Computed by CMake
-joint_trajectory_controller_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/joint_trajectory_controller
+joint_trajectory_controller_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/joint_trajectory_controller
 
 //The directory containing a CMake configuration file for kdl_conversions.
 kdl_conversions_DIR:PATH=/opt/ros/indigo/share/kdl_conversions/cmake
@@ -834,25 +834,25 @@ kdl_conversions_DIR:PATH=/opt/ros/indigo/share/kdl_conversions/cmake
 kdl_parser_DIR:PATH=/opt/ros/indigo/share/kdl_parser/cmake
 
 //Value Computed by CMake
-kinect2_bridge_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/iai_kinect2/kinect2_bridge
+kinect2_bridge_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_bridge
 
 //The directory containing a CMake configuration file for kinect2_bridge.
 kinect2_bridge_DIR:PATH=/home/andrewandjasmine/movo_ws/devel/share/kinect2_bridge/cmake
 
 //Value Computed by CMake
-kinect2_bridge_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/iai_kinect2/kinect2_bridge
+kinect2_bridge_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_bridge
 
 //Dependencies for the target
 kinect2_bridge_nodelet_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libcompressed_depth_image_transport.so;general;/usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.8;general;/opt/ros/indigo/lib/libcv_bridge.so;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;kinect2_registration;general;/usr/lib/x86_64-linux-gnu/libOpenCL.so;general;opencv_videostab;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;general;/usr/local/lib/libfreenect2.so;
 
 //Value Computed by CMake
-kinect2_calibration_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/iai_kinect2/kinect2_calibration
+kinect2_calibration_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_calibration
 
 //Value Computed by CMake
-kinect2_calibration_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/iai_kinect2/kinect2_calibration
+kinect2_calibration_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_calibration
 
 //Value Computed by CMake
-kinect2_registration_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/iai_kinect2/kinect2_registration
+kinect2_registration_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_registration
 
 //The directory containing a CMake configuration file for kinect2_registration.
 kinect2_registration_DIR:PATH=/home/andrewandjasmine/movo_ws/devel/share/kinect2_registration/cmake
@@ -861,13 +861,13 @@ kinect2_registration_DIR:PATH=/home/andrewandjasmine/movo_ws/devel/share/kinect2
 kinect2_registration_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;opencv_videostab;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;general;/usr/lib/x86_64-linux-gnu/libOpenCL.so;
 
 //Value Computed by CMake
-kinect2_registration_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/iai_kinect2/kinect2_registration
+kinect2_registration_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_registration
 
 //Value Computed by CMake
-kinect2_viewer_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/iai_kinect2/kinect2_viewer
+kinect2_viewer_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_viewer
 
 //Value Computed by CMake
-kinect2_viewer_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/iai_kinect2/kinect2_viewer
+kinect2_viewer_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/iai_kinect2/kinect2_viewer
 
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/indigo/share/laser_geometry/cmake
@@ -894,145 +894,151 @@ move_base_msgs_DIR:PATH=/opt/ros/indigo/share/move_base_msgs/cmake
 moveit_msgs_DIR:PATH=/opt/ros/indigo/share/moveit_msgs/cmake
 
 //Value Computed by CMake
-moveit_python_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/moveit_python
+moveit_python_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/moveit_python
 
 //Value Computed by CMake
-moveit_python_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/moveit_python
+moveit_python_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/moveit_python
 
 //Value Computed by CMake
-movo_7dof_moveit_config_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_7dof_moveit_config
+movo_7dof_moveit_config_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_7dof_moveit_config
 
 //Value Computed by CMake
-movo_7dof_moveit_config_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_7dof_moveit_config
+movo_7dof_moveit_config_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_7dof_moveit_config
 
 //Value Computed by CMake
-movo_assisted_teleop_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_navigation/movo_assisted_teleop
+movo_assisted_teleop_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_navigation/movo_assisted_teleop
 
 //Value Computed by CMake
-movo_assisted_teleop_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_navigation/movo_assisted_teleop
+movo_assisted_teleop_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_navigation/movo_assisted_teleop
 
 //Value Computed by CMake
-movo_bringup_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_robot/movo_bringup
+movo_bringup_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_robot/movo_bringup
 
 //Value Computed by CMake
-movo_bringup_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_robot/movo_bringup
+movo_bringup_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_bringup
 
 //Value Computed by CMake
-movo_common_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_common
+movo_common_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_common
 
 //Value Computed by CMake
-movo_common_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_common
+movo_common_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_common
 
 //Value Computed by CMake
-movo_config_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_config
+movo_config_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_config
 
 //Value Computed by CMake
-movo_config_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_config
+movo_config_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_config
 
 //Value Computed by CMake
-movo_dashboard_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_desktop/movo_dashboard
+movo_dashboard_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_desktop/movo_dashboard
 
 //Value Computed by CMake
-movo_dashboard_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_desktop/movo_dashboard
+movo_dashboard_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_desktop/movo_dashboard
 
 //Value Computed by CMake
-movo_demos_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_demos
+movo_demos_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_demos
 
 //Value Computed by CMake
-movo_demos_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_demos
+movo_demos_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_demos
 
 //Value Computed by CMake
-movo_description_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_description
+movo_description_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_description
 
 //Value Computed by CMake
-movo_description_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_description
+movo_description_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_description
 
 //Value Computed by CMake
-movo_desktop_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_desktop/movo_desktop
+movo_desktop_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_desktop/movo_desktop
 
 //Value Computed by CMake
-movo_desktop_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_desktop/movo_desktop
+movo_desktop_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_desktop/movo_desktop
 
 //Value Computed by CMake
-movo_gazebo_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_simulation/movo_gazebo
+movo_detect_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_detect
 
 //Value Computed by CMake
-movo_gazebo_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_simulation/movo_gazebo
+movo_detect_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_detect
 
 //Value Computed by CMake
-movo_gazebo_plugins_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_simulation/movo_gazebo_plugins/movo_gazebo_plugins
+movo_gazebo_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_simulation/movo_gazebo
 
 //Value Computed by CMake
-movo_gazebo_plugins_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_simulation/movo_gazebo_plugins/movo_gazebo_plugins
+movo_gazebo_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_simulation/movo_gazebo
 
 //Value Computed by CMake
-movo_moveit_config_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_moveit_config
+movo_gazebo_plugins_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_simulation/movo_gazebo_plugins/movo_gazebo_plugins
 
 //Value Computed by CMake
-movo_moveit_config_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_moveit_config
+movo_gazebo_plugins_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_simulation/movo_gazebo_plugins/movo_gazebo_plugins
 
 //Value Computed by CMake
-movo_msgs_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_msgs
+movo_moveit_config_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_moveit_config
+
+//Value Computed by CMake
+movo_moveit_config_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_moveit_config
+
+//Value Computed by CMake
+movo_msgs_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_msgs
 
 //The directory containing a CMake configuration file for movo_msgs.
 movo_msgs_DIR:PATH=/home/andrewandjasmine/movo_ws/devel/share/movo_msgs/cmake
 
 //Value Computed by CMake
-movo_msgs_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_msgs
+movo_msgs_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_msgs
 
 //Value Computed by CMake
-movo_navigation_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_navigation/movo_navigation
+movo_navigation_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_navigation/movo_navigation
 
 //Value Computed by CMake
-movo_navigation_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_navigation/movo_navigation
+movo_navigation_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_navigation/movo_navigation
 
 //Value Computed by CMake
-movo_network_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_network
+movo_network_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_network
 
 //Value Computed by CMake
-movo_network_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_network
+movo_network_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_network
 
 //Value Computed by CMake
-movo_remote_teleop_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_desktop/movo_remote_teleop
+movo_remote_teleop_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_desktop/movo_remote_teleop
 
 //Value Computed by CMake
-movo_remote_teleop_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_desktop/movo_remote_teleop
+movo_remote_teleop_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_desktop/movo_remote_teleop
 
 //Value Computed by CMake
-movo_robot_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_robot/movo_robot
+movo_robot_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_robot/movo_robot
 
 //Value Computed by CMake
-movo_robot_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_robot/movo_robot
+movo_robot_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_robot
 
 //Value Computed by CMake
-movo_ros_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_ros
+movo_ros_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_ros
 
 //Value Computed by CMake
-movo_ros_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_ros
+movo_ros_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_ros
 
 //Value Computed by CMake
-movo_simulation_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_simulation/movo_simulation
+movo_simulation_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_simulation/movo_simulation
 
 //Value Computed by CMake
-movo_simulation_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_simulation/movo_simulation
+movo_simulation_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_simulation/movo_simulation
 
 //Value Computed by CMake
-movo_third_party_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/movo_third_party
+movo_third_party_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/movo_third_party
 
 //Value Computed by CMake
-movo_third_party_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/movo_third_party
+movo_third_party_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/movo_third_party
 
 //Value Computed by CMake
-movo_upstart_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_robot/movo_upstart
+movo_upstart_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_robot/movo_upstart
 
 //Value Computed by CMake
-movo_upstart_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_robot/movo_upstart
+movo_upstart_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_upstart
 
 //Value Computed by CMake
-movo_viz_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_desktop/movo_viz
+movo_viz_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_desktop/movo_viz
 
 //Value Computed by CMake
-movo_viz_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_desktop/movo_viz
+movo_viz_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_desktop/movo_viz
 
 //The directory containing a CMake configuration file for nav_core.
 nav_core_DIR:PATH=/opt/ros/indigo/share/nav_core/cmake
@@ -1068,13 +1074,13 @@ pcl_ros_DIR:PATH=/opt/ros/indigo/share/pcl_ros/cmake
 pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
 
 //Value Computed by CMake
-range_sensor_filters_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_robot/movo_sensor_filters/range_sensor_filters
+range_sensor_filters_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_robot/movo_sensor_filters/range_sensor_filters
 
 //Dependencies for the target
 range_sensor_filters_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libmean.so;general;/opt/ros/indigo/lib/libparams.so;general;/opt/ros/indigo/lib/libincrement.so;general;/opt/ros/indigo/lib/libmedian.so;general;/opt/ros/indigo/lib/libtransfer_function.so;general;/opt/ros/indigo/lib/liblaser_geometry.so;general;/opt/ros/indigo/lib/libpcl_ros_filters.so;general;/opt/ros/indigo/lib/libpcl_ros_io.so;general;/opt/ros/indigo/lib/libpcl_ros_tf.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;optimized;/usr/lib/libpcl_kdtree.so;debug;/usr/lib/libpcl_kdtree.so;optimized;/usr/lib/libpcl_search.so;debug;/usr/lib/libpcl_search.so;optimized;/usr/lib/libpcl_sample_consensus.so;debug;/usr/lib/libpcl_sample_consensus.so;optimized;/usr/lib/libpcl_filters.so;debug;/usr/lib/libpcl_filters.so;optimized;/usr/lib/libpcl_features.so;debug;/usr/lib/libpcl_features.so;optimized;/usr/lib/libpcl_keypoints.so;debug;/usr/lib/libpcl_keypoints.so;optimized;/usr/lib/libpcl_segmentation.so;debug;/usr/lib/libpcl_segmentation.so;optimized;/usr/lib/libpcl_visualization.so;debug;/usr/lib/libpcl_visualization.so;optimized;/usr/lib/libpcl_outofcore.so;debug;/usr/lib/libpcl_outofcore.so;optimized;/usr/lib/libpcl_registration.so;debug;/usr/lib/libpcl_registration.so;optimized;/usr/lib/libpcl_recognition.so;debug;/usr/lib/libpcl_recognition.so;optimized;/usr/lib/libpcl_surface.so;debug;/usr/lib/libpcl_surface.so;optimized;/usr/lib/libpcl_people.so;debug;/usr/lib/libpcl_people.so;optimized;/usr/lib/libpcl_tracking.so;debug;/usr/lib/libpcl_tracking.so;optimized;/usr/lib/libpcl_apps.so;debug;/usr/lib/libpcl_apps.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;general;/usr/lib/libvtkCommon.so.5.8.0;general;/usr/lib/libvtkRendering.so.5.8.0;general;/usr/lib/libvtkHybrid.so.5.8.0;general;/usr/lib/libvtkCharts.so.5.8.0;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/librosbag.so;general;/opt/ros/indigo/lib/librosbag_storage.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/opt/ros/indigo/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/indigo/lib/libtopic_tools.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
 
 //Value Computed by CMake
-range_sensor_filters_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_robot/movo_sensor_filters/range_sensor_filters
+range_sensor_filters_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_sensor_filters/range_sensor_filters
 
 //The directory containing a CMake configuration file for realtime_tools.
 realtime_tools_DIR:PATH=/opt/ros/indigo/share/realtime_tools/cmake
@@ -1086,19 +1092,19 @@ resource_retriever_DIR:PATH=/opt/ros/indigo/share/resource_retriever/cmake
 robot_geometric_shapes_LIB_DEPENDS:STATIC=general;BulletSoftBody;general;BulletDynamics;general;BulletCollision;general;LinearMath;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/local/lib/libpcl_common.so;debug;/usr/local/lib/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;optimized;/usr/local/lib/libpcl_kdtree.so;debug;/usr/local/lib/libpcl_kdtree.so;optimized;/usr/local/lib/libpcl_octree.so;debug;/usr/local/lib/libpcl_octree.so;optimized;/usr/local/lib/libpcl_search.so;debug;/usr/local/lib/libpcl_search.so;optimized;/usr/local/lib/libpcl_sample_consensus.so;debug;/usr/local/lib/libpcl_sample_consensus.so;optimized;/usr/local/lib/libpcl_filters.so;debug;/usr/local/lib/libpcl_filters.so;optimized;/usr/local/lib/libpcl_features.so;debug;/usr/local/lib/libpcl_features.so;general;/usr/lib/libOpenNI.so;general;/usr/lib/libOpenNI2.so;general;vtkCommon;general;vtkFiltering;general;vtkImaging;general;vtkGraphics;general;vtkGenericFiltering;general;vtkIO;general;vtkRendering;general;vtkVolumeRendering;general;vtkHybrid;general;vtkWidgets;general;vtkParallel;general;vtkInfovis;general;vtkGeovis;general;vtkViews;general;vtkCharts;optimized;/usr/local/lib/libpcl_io.so;debug;/usr/local/lib/libpcl_io.so;optimized;/usr/local/lib/libpcl_visualization.so;debug;/usr/local/lib/libpcl_visualization.so;optimized;/usr/local/lib/libpcl_ml.so;debug;/usr/local/lib/libpcl_ml.so;optimized;/usr/local/lib/libpcl_segmentation.so;debug;/usr/local/lib/libpcl_segmentation.so;optimized;/usr/local/lib/libpcl_people.so;debug;/usr/local/lib/libpcl_people.so;optimized;/usr/local/lib/libpcl_registration.so;debug;/usr/local/lib/libpcl_registration.so;optimized;/usr/local/lib/libpcl_recognition.so;debug;/usr/local/lib/libpcl_recognition.so;optimized;/usr/local/lib/libpcl_keypoints.so;debug;/usr/local/lib/libpcl_keypoints.so;optimized;/usr/local/lib/libpcl_outofcore.so;debug;/usr/local/lib/libpcl_outofcore.so;optimized;/usr/local/lib/libpcl_stereo.so;debug;/usr/local/lib/libpcl_stereo.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/usr/local/lib/libpcl_surface.so;debug;/usr/local/lib/libpcl_surface.so;optimized;/usr/local/lib/libpcl_tracking.so;debug;/usr/local/lib/libpcl_tracking.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;general;/usr/lib/libOpenNI2.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;general;vtkCommon;general;vtkFiltering;general;vtkImaging;general;vtkGraphics;general;vtkGenericFiltering;general;vtkIO;general;vtkRendering;general;vtkVolumeRendering;general;vtkHybrid;general;vtkWidgets;general;vtkParallel;general;vtkInfovis;general;vtkGeovis;general;vtkViews;general;vtkCharts;general;/opt/ros/indigo/lib/libmean.so;general;/opt/ros/indigo/lib/libparams.so;general;/opt/ros/indigo/lib/libincrement.so;general;/opt/ros/indigo/lib/libmedian.so;general;/opt/ros/indigo/lib/libtransfer_function.so;general;/opt/ros/indigo/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/opt/ros/indigo/lib/librosconsole_bridge.so;general;/opt/ros/indigo/lib/libresource_retriever.so;general;/opt/ros/indigo/lib/libpcl_ros_filters.so;general;/opt/ros/indigo/lib/libpcl_ros_io.so;general;/opt/ros/indigo/lib/libpcl_ros_tf.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;optimized;/usr/lib/libpcl_kdtree.so;debug;/usr/lib/libpcl_kdtree.so;optimized;/usr/lib/libpcl_search.so;debug;/usr/lib/libpcl_search.so;optimized;/usr/lib/libpcl_sample_consensus.so;debug;/usr/lib/libpcl_sample_consensus.so;optimized;/usr/lib/libpcl_filters.so;debug;/usr/lib/libpcl_filters.so;optimized;/usr/lib/libpcl_features.so;debug;/usr/lib/libpcl_features.so;optimized;/usr/lib/libpcl_keypoints.so;debug;/usr/lib/libpcl_keypoints.so;optimized;/usr/lib/libpcl_segmentation.so;debug;/usr/lib/libpcl_segmentation.so;optimized;/usr/lib/libpcl_visualization.so;debug;/usr/lib/libpcl_visualization.so;optimized;/usr/lib/libpcl_outofcore.so;debug;/usr/lib/libpcl_outofcore.so;optimized;/usr/lib/libpcl_registration.so;debug;/usr/lib/libpcl_registration.so;optimized;/usr/lib/libpcl_recognition.so;debug;/usr/lib/libpcl_recognition.so;optimized;/usr/lib/libpcl_surface.so;debug;/usr/lib/libpcl_surface.so;optimized;/usr/lib/libpcl_people.so;debug;/usr/lib/libpcl_people.so;optimized;/usr/lib/libpcl_tracking.so;debug;/usr/lib/libpcl_tracking.so;optimized;/usr/lib/libpcl_apps.so;debug;/usr/lib/libpcl_apps.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;general;/usr/lib/libvtkCommon.so.5.8.0;general;/usr/lib/libvtkRendering.so.5.8.0;general;/usr/lib/libvtkHybrid.so.5.8.0;general;/usr/lib/libvtkCharts.so.5.8.0;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/librosbag.so;general;/opt/ros/indigo/lib/librosbag_storage.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/opt/ros/indigo/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/indigo/lib/libtopic_tools.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;assimp;
 
 //Value Computed by CMake
-robot_self_filter_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/robot_self_filter
+robot_self_filter_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/robot_self_filter
 
 //Dependencies for the target
 robot_self_filter_LIB_DEPENDS:STATIC=general;robot_geometric_shapes;general;assimp;
 
 //Value Computed by CMake
-robot_self_filter_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/robot_self_filter
+robot_self_filter_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/robot_self_filter
 
 //Value Computed by CMake
-robot_state_publisher_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/robot_state_publisher
+robot_state_publisher_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/robot_state_publisher
 
 //Value Computed by CMake
-robot_state_publisher_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/robot_state_publisher
+robot_state_publisher_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/robot_state_publisher
 
 //Dependencies for the target
 robot_state_publisher_solver_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libkdl_parser.so;general;/opt/ros/indigo/lib/liborocos-kdl.so.1.3.0;general;/opt/ros/indigo/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/librosconsole_bridge.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;orocos-kdl;
@@ -1110,10 +1116,10 @@ roboticsgroup_gazebo_disable_link_plugin_LIB_DEPENDS:STATIC=general;/opt/ros/ind
 roboticsgroup_gazebo_mimic_joint_plugin_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libgazebo_ros_api_plugin.so;general;/opt/ros/indigo/lib/libgazebo_ros_paths_plugin.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libcontrol_toolbox.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/librealtime_tools.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libgazebo.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_ccd.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_common.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gui.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gui_building.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gui_viewers.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_math.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_msgs.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_ode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_opcode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_physics.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_physics_ode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_rendering.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_selection_buffer.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_sensors.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_skyx.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_transport.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_util.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_player.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_rendering_deferred.so;optimized;/usr/lib/x86_64-linux-gnu/libprotobuf.so;debug;/usr/lib/x86_64-linux-gnu/libprotobuf.so;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libsdformat.so;
 
 //Value Computed by CMake
-roboticsgroup_gazebo_plugins_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_simulation/movo_gazebo_plugins/roboticsgroup_gazebo_plugins
+roboticsgroup_gazebo_plugins_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_simulation/movo_gazebo_plugins/roboticsgroup_gazebo_plugins
 
 //Value Computed by CMake
-roboticsgroup_gazebo_plugins_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_simulation/movo_gazebo_plugins/roboticsgroup_gazebo_plugins
+roboticsgroup_gazebo_plugins_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_simulation/movo_gazebo_plugins/roboticsgroup_gazebo_plugins
 
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/indigo/share/rosbag/cmake
@@ -1176,19 +1182,19 @@ sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
 shape_msgs_DIR:PATH=/opt/ros/indigo/share/shape_msgs/cmake
 
 //Value Computed by CMake
-si_utils_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/si_utils
+si_utils_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/si_utils
 
 //Value Computed by CMake
-si_utils_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/si_utils
+si_utils_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/si_utils
 
 //Value Computed by CMake
-simple_grasping_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_common/movo_third_party/simple_grasping
+simple_grasping_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_common/movo_third_party/simple_grasping
 
 //Dependencies for the target
 simple_grasping_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/opt/ros/indigo/lib/libpcl_ros_filters.so;general;/opt/ros/indigo/lib/libpcl_ros_io.so;general;/opt/ros/indigo/lib/libpcl_ros_tf.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;optimized;/usr/lib/libpcl_kdtree.so;debug;/usr/lib/libpcl_kdtree.so;optimized;/usr/lib/libpcl_search.so;debug;/usr/lib/libpcl_search.so;optimized;/usr/lib/libpcl_sample_consensus.so;debug;/usr/lib/libpcl_sample_consensus.so;optimized;/usr/lib/libpcl_filters.so;debug;/usr/lib/libpcl_filters.so;optimized;/usr/lib/libpcl_features.so;debug;/usr/lib/libpcl_features.so;optimized;/usr/lib/libpcl_keypoints.so;debug;/usr/lib/libpcl_keypoints.so;optimized;/usr/lib/libpcl_segmentation.so;debug;/usr/lib/libpcl_segmentation.so;optimized;/usr/lib/libpcl_visualization.so;debug;/usr/lib/libpcl_visualization.so;optimized;/usr/lib/libpcl_outofcore.so;debug;/usr/lib/libpcl_outofcore.so;optimized;/usr/lib/libpcl_registration.so;debug;/usr/lib/libpcl_registration.so;optimized;/usr/lib/libpcl_recognition.so;debug;/usr/lib/libpcl_recognition.so;optimized;/usr/lib/libpcl_surface.so;debug;/usr/lib/libpcl_surface.so;optimized;/usr/lib/libpcl_people.so;debug;/usr/lib/libpcl_people.so;optimized;/usr/lib/libpcl_tracking.so;debug;/usr/lib/libpcl_tracking.so;optimized;/usr/lib/libpcl_apps.so;debug;/usr/lib/libpcl_apps.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;general;/usr/lib/libvtkCommon.so.5.8.0;general;/usr/lib/libvtkRendering.so.5.8.0;general;/usr/lib/libvtkHybrid.so.5.8.0;general;/usr/lib/libvtkCharts.so.5.8.0;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/librosbag.so;general;/opt/ros/indigo/lib/librosbag_storage.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/opt/ros/indigo/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/indigo/lib/libtopic_tools.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/local/lib/libpcl_common.so;debug;/usr/local/lib/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;optimized;/usr/local/lib/libpcl_kdtree.so;debug;/usr/local/lib/libpcl_kdtree.so;optimized;/usr/local/lib/libpcl_octree.so;debug;/usr/local/lib/libpcl_octree.so;optimized;/usr/local/lib/libpcl_search.so;debug;/usr/local/lib/libpcl_search.so;optimized;/usr/local/lib/libpcl_sample_consensus.so;debug;/usr/local/lib/libpcl_sample_consensus.so;optimized;/usr/local/lib/libpcl_filters.so;debug;/usr/local/lib/libpcl_filters.so;optimized;/usr/local/lib/libpcl_features.so;debug;/usr/local/lib/libpcl_features.so;general;/usr/lib/libOpenNI.so;general;/usr/lib/libOpenNI2.so;general;vtkCommon;general;vtkFiltering;general;vtkImaging;general;vtkGraphics;general;vtkGenericFiltering;general;vtkIO;general;vtkRendering;general;vtkVolumeRendering;general;vtkHybrid;general;vtkWidgets;general;vtkParallel;general;vtkInfovis;general;vtkGeovis;general;vtkViews;general;vtkCharts;optimized;/usr/local/lib/libpcl_io.so;debug;/usr/local/lib/libpcl_io.so;optimized;/usr/local/lib/libpcl_visualization.so;debug;/usr/local/lib/libpcl_visualization.so;optimized;/usr/local/lib/libpcl_ml.so;debug;/usr/local/lib/libpcl_ml.so;optimized;/usr/local/lib/libpcl_segmentation.so;debug;/usr/local/lib/libpcl_segmentation.so;optimized;/usr/local/lib/libpcl_people.so;debug;/usr/local/lib/libpcl_people.so;optimized;/usr/local/lib/libpcl_registration.so;debug;/usr/local/lib/libpcl_registration.so;optimized;/usr/local/lib/libpcl_recognition.so;debug;/usr/local/lib/libpcl_recognition.so;optimized;/usr/local/lib/libpcl_keypoints.so;debug;/usr/local/lib/libpcl_keypoints.so;optimized;/usr/local/lib/libpcl_outofcore.so;debug;/usr/local/lib/libpcl_outofcore.so;optimized;/usr/local/lib/libpcl_stereo.so;debug;/usr/local/lib/libpcl_stereo.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/usr/local/lib/libpcl_surface.so;debug;/usr/local/lib/libpcl_surface.so;optimized;/usr/local/lib/libpcl_tracking.so;debug;/usr/local/lib/libpcl_tracking.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;general;/usr/lib/libOpenNI2.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;general;vtkCommon;general;vtkFiltering;general;vtkImaging;general;vtkGraphics;general;vtkGenericFiltering;general;vtkIO;general;vtkRendering;general;vtkVolumeRendering;general;vtkHybrid;general;vtkWidgets;general;vtkParallel;general;vtkInfovis;general;vtkGeovis;general;vtkViews;general;vtkCharts;
 
 //Value Computed by CMake
-simple_grasping_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/simple_grasping
+simple_grasping_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/simple_grasping
 
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/indigo/share/smclib/cmake
@@ -1233,10 +1239,10 @@ urdf_DIR:PATH=/opt/ros/indigo/share/urdf/cmake
 urdfdom_headers_DIR:PATH=/usr/share/urdfdom_headers/cmake
 
 //Value Computed by CMake
-vector_sensor_filters_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_robot/movo_sensor_filters/movo_sensor_filters
+vector_sensor_filters_BINARY_DIR:STATIC=/home/andrewandjasmine/movo_ws/build/movo_kinova/movo_robot/movo_sensor_filters/movo_sensor_filters
 
 //Value Computed by CMake
-vector_sensor_filters_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_robot/movo_sensor_filters/movo_sensor_filters
+vector_sensor_filters_SOURCE_DIR:STATIC=/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_robot/movo_sensor_filters/movo_sensor_filters
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/indigo/share/visualization_msgs/cmake
@@ -1422,7 +1428,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=45
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=46
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -7,7 +7,7 @@ from sys import path as sys_path
 
 from pkgutil import extend_path
 
-__extended_path = "/home/andrewandjasmine/movo_ws/src/movo_common/movo_third_party/moveit_python/src".split(";")
+__extended_path = "/home/andrewandjasmine/movo_ws/src/movo_kinova/movo_common/movo_third_party/moveit_python/src".split(";")
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

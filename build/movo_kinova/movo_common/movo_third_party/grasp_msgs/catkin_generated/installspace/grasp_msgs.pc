@@ -1,0 +1,8 @@
+prefix=/home/andrewandjasmine/movo_ws/install
+
+Name: grasp_msgs
+Description: Description of grasp_msgs
+Version: 0.3.1
+Cflags: -I/home/andrewandjasmine/movo_ws/install/include
+Libs: -L/home/andrewandjasmine/movo_ws/install/lib 
+Requires: geometry_msgs moveit_msgs sensor_msgs shape_msgs
