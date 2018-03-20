@@ -46,7 +46,7 @@ net = resnetv1(num_layers=101)
 net.create_architecture("TEST", 21, tag='default', anchor_scales=[8, 16, 32])
 num_frames = 0
 
-def vis_detections(im, class_name, dets, thresh=0.5):
+def vis_detections(class_name, dets, thresh=0.5):
     """Draw detected bounding boxes."""
     inds = np.where(dets[:, -1] >= thresh)[0]
     if len(inds) == 0:
@@ -62,8 +62,13 @@ def vis_detections(im, class_name, dets, thresh=0.5):
 
 def draw(boxes, im):
      for key, value in boxes.iteritems():
+         if(value == None):
+            continue
          for box in value:
-             cv2.rectangle(im, (box[0], box[1]), (box[3], box[4]), (255, 0, 0), 2)
+             if(key == 'person'):
+                cv2.rectangle(im, (box[0], box[1]), (box[2], box[3]), (255, 0, 0), 2)
+             else:
+                cv2.rectangle(im, (box[0], box[1]), (box[2], box[3]), (0, 255, 0), 2)
 
      cv2.imshow("Image Window", im)
 
@@ -71,6 +76,9 @@ def callback(data):
     print("get one frame")
     cv_image = bridge.imgmsg_to_cv2(data, desired_encoding="passthrough")
     # cv2.imshow("Image Window", cv_image)
+    global num_frames
+    global sess
+    global net
     num_frames += 1
     if(num_frames % 5 == 0):
         scores, boxes = im_detect(sess, net, cv_image)
@@ -79,14 +87,15 @@ def callback(data):
         boxes_per_class = {}
         for cls_ind, cls in enumerate(CLASSES[1:]):
             cls_ind += 1 # because we skipped background
-            cls_boxes = boxes[:, 4*cls_ind:4*(cls_ind + 1)]
-            cls_scores = scores[:, cls_ind]
-            dets = np.hstack((cls_boxes,
-                          cls_scores[:, np.newaxis])).astype(np.float32)
-            keep = nms(dets, NMS_THRESH)
-            dets = dets[keep, :]
-            boxes_per_class[cls] = vis_detections(im, cls, dets, thresh=CONF_THRESH)
-
+            if(cls == 'chair' or cls == 'person'):
+                cls_boxes = boxes[:, 4*cls_ind:4*(cls_ind + 1)]
+                cls_scores = scores[:, cls_ind]
+                dets = np.hstack((cls_boxes, cls_scores[:, np.newaxis])).astype(np.float32)
+                keep = nms(dets, NMS_THRESH)
+                dets = dets[keep, :]
+                boxes_per_class[cls] = vis_detections(cls, dets, thresh=CONF_THRESH)
+        
+        print(boxes_per_class)
         draw(boxes_per_class, cv_image)
 
 
@@ -98,6 +107,7 @@ def callback_pc(data):
         print(point[0], point[1], point[2])
 
 def listener():
+    print("listening")
     rospy.init_node("listener", anonymous=True)
     rospy.Subscriber("/kinect2/qhd/image_color_rect", Image, callback)
     # rospy.Subscriber("/kinect2/qhd/points", PointCloud2, callback_pc)
@@ -143,5 +153,5 @@ if __name__ == '__main__':
                           tag='default', anchor_scales=[8, 16, 32])'''
     saver = tf.train.Saver()
     saver.restore(sess, tfmodel)
-
+    print("model loaded")
     listener()
