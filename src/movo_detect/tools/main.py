@@ -19,7 +19,7 @@ from nets.vgg16 import vgg16
 from nets.resnet_v1 import resnetv1
 
 import rospy
-from sensor_msgs.msg import Image, PointCloud2
+from sensor_msgs.msg import Image, PointCloud2, CameraInfo
 import sensor_msgs.point_cloud2
 
 import cv2
@@ -69,17 +69,17 @@ def find_closest_timestamp(image_ts):
             closest_pc = i
             diff = np.abs(image_ts-pointcloud_ts_buffer[i])
 
+    print(pointcloud_ts_buffer[closest_pc])
+    print(diff)
     return closest_pc
 
 
 def depth_to_xyz(depth_image):
-    fx=367.286994337726
-    fy=367.286855347968
-    cx=255.165695200749
-    cy=211.824600345805
-    k1=0.0914203770220268
-    k2=-0.269349746097515
-    k3=0.0925671408453617
+    fx=540.68603515625
+    fy=540.68603515625
+    cx=479.75
+    cy=269.75
+
 
     pointcloud = np.zeros((height, width, 3))
     for j in range(height):
@@ -150,13 +150,23 @@ def callback(data):
             keep = nms(dets, NMS_THRESH)
             dets = dets[keep, :]
             boxes_per_class[cls] = vis_detections(cls, dets, thresh=CONF_THRESH)
+            if boxes_per_class[cls] == None:
+                continue
             for box in boxes_per_class[cls]:
                 centroid_x = int(float(box[0]+box[2])/2)
                 centroid_y = int(float(box[1]+box[3])/2)
-                print(cls)
-                print(closest_pc[centroid_x, centroid_y])
-        
-        # print(boxes_per_class)
+                breakout = 0
+                for i in range(max(centroid_x-2, 0), min(centroid_x+2, width)):
+                    if(breakout):
+                        breakout = 0
+                        break
+                    for j in range(max(centroid_y-2,0), min(centroid_y+2, height)):
+                        if closest_pc[j,i, 2] !=0:
+                            print(cls)
+                            print(closest_pc[j,i])
+                            breakout=1
+                            break
+
         draw(boxes_per_class, cv_image)
 
 
@@ -180,11 +190,12 @@ def callback_pc(data):
     #for point in sensor_msgs.point_cloud2.read_points(data, skip_nans=True):
     #    print(point[0], point[1], point[2])
 
+
 def listener():
     print("listening")
     rospy.init_node("listener", anonymous=True)
-    rospy.Subscriber("/kinect2/qhd/image_color_rect", Image, callback)
-    rospy.Subscriber("/kinect2/qhd/image_depth_rect", Image, callback_pc)
+    rospy.Subscriber("/kinect2/qhd/image_color_rect", Image, callback, queue_size=3)
+    rospy.Subscriber("/kinect2/qhd/image_depth_rect", Image, callback_pc, queue_size=3)
     rospy.spin()
 
 def parse_args():
