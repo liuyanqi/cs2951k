@@ -21,13 +21,16 @@ from nets.resnet_v1 import resnetv1
 import rospy
 from sensor_msgs.msg import Image, PointCloud2, CameraInfo
 import sensor_msgs.point_cloud2
+from geometry_msgs.msg import PointStamped
 
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
 
 import math
+from visualization_msgs.msg import MarkerArray
+from visualization_msgs.msg import Marker
 
-#TODO: message timestamp synchronization
+from tf import TransformListener 
 
 
 bridge = CvBridge()
@@ -56,9 +59,13 @@ net.create_architecture("TEST", 21, tag='default', anchor_scales=[8, 16, 32])
 #global variable
 num_frames = 0
 keep_frames = 5
+#NOTE: pointcloud_buffer is acutally depth image
 pointcloud_buffer = []
 # pointcloud_buffer = np.zeros((keep_frames, height, width, 3))
 pointcloud_ts_buffer = []
+pointcloud = np.zeros((height, width, 3))
+markerArray = MarkerArray()
+
 
 def find_closest_timestamp(image_ts):
     global pointcloud_ts_buffer
@@ -73,26 +80,37 @@ def find_closest_timestamp(image_ts):
     print(diff)
     return closest_pc
 
-
-def depth_to_xyz(depth_image):
+def depth_to_xyz(depth, j, i):
     fx=540.68603515625
     fy=540.68603515625
     cx=479.75
     cy=269.75
 
+    d = float(depth)/1000
+    z = d
+    x = (j - cx) * z /fx
+    y = -(i - cy) * z /fy
+    return(x,y,z)
 
-    pointcloud = np.zeros((height, width, 3))
-    for j in range(height):
-        for i in range(width):
-            d = float(depth_image[j][i])/1000
-            z = d
-            x = (j - cx) * z /fx
-            y = (i - cy) * z /fy
-            pointcloud[j,i,0] = x
-            pointcloud[j,i,1] = y
-            pointcloud[j,i,2] = z
-            # print(x,y,z)
-    return pointcloud
+# def depth_to_xyz(depth_image):
+#     fx=540.68603515625
+#     fy=540.68603515625
+#     cx=479.75
+#     cy=269.75
+
+#     global pointcloud
+#     #pointcloud = np.zeros((height, width, 3))
+#     for j in range(height):
+#         for i in range(width):
+#             d = float(depth_image[j][i])/1000
+#             z = d
+#             x = (j - cx) * z /fx
+#             y = (i - cy) * z /fy
+#             pointcloud[j,i,0] = x
+#             pointcloud[j,i,1] = y
+#             pointcloud[j,i,2] = z
+#             # print(x,y,z)
+#     return pointcloud
 
 
 
@@ -119,8 +137,25 @@ def draw(boxes, im):
                 cv2.rectangle(im, (box[0], box[1]), (box[2], box[3]), (255, 0, 0), 2)
              else:
                 cv2.rectangle(im, (box[0], box[1]), (box[2], box[3]), (0, 255, 0), 2)
+                center_x = (box[0] + box[2])/2
+                center_y = (box[1] + box[3])/2
 
+                cv2.circle(im, (int(center_x), int(center_y)), 1, (0,255,0))
      cv2.imshow("Image Window", im)
+
+def add_markerArray(marker):
+    global markerArray
+    find_similar = False
+    for m in markerArray.markers:
+        distance = (m.pose.position.x - marker.pose.position.x)**2 + (m.pose.position.y - marker.pose.position.y)**2
+        distance = math.sqrt(distance)
+        if distance < 1:
+            find_similar = True
+            break
+    if not find_similar:
+        markerArray.markers.append(marker)
+
+
 
 def callback(data):
     time_stamp = data.header.stamp.secs
@@ -132,11 +167,19 @@ def callback(data):
     global sess
     global net
     global pointcloud_buffer
+    global markerArray
     num_frames += 1
+    chair_counter = 0
+
+
+    #find ros transform
+    tflistener.waitForTransform("/base_link", "/map", rospy.Time(0), rospy.Duration(4.0))
+    # t = tflistener.getLatestCommonTime("/base_link", "/map")
+    # position, quaternion = tflistener.lookupTransform("/base_link", "/map", t)
+    # print(position, quaternion)
 
     index = find_closest_timestamp(time_stamp)
     closest_pc = pointcloud_buffer[index]
-    # if(num_frames % 5 == 0):
     scores, boxes = im_detect(sess, net, cv_image)
     CONF_THRESH = 0.8
     NMS_THRESH = 0.3
@@ -161,13 +204,55 @@ def callback(data):
                         breakout = 0
                         break
                     for j in range(max(centroid_y-2,0), min(centroid_y+2, height)):
-                        if closest_pc[j,i, 2] !=0:
-                            print(cls)
-                            print(closest_pc[j,i])
+                        x, y,z = depth_to_xyz(closest_pc[centroid_y, centroid_x], centroid_y, centroid_x)
+                        if z !=0:
+                            if cls == 'chair':
+                                print(cls)
+                                print(x,y,z)
+                                chair_point = PointStamped()
+                                chair_point.header.frame_id = "base_link"
+                                chair_point.point.x = z
+                                chair_point.point.y = y
+                                chair_point.point.z = x
+
+                                p = tflistener.transformPoint("map", chair_point)
+                                # print(p)
+
+                                marker = Marker()
+                                # marker.header.frame_id = "kinect2_ir_link"
+                                marker.header.frame_id = "map"
+                                marker.header.stamp = rospy.get_rostime()
+                                marker.ns = "my_namespace"
+                                marker.id = len(markerArray.markers)
+                                marker.type = marker.SPHERE
+                                marker.action = marker.ADD
+                                marker.pose.position.x = p.point.x
+                                marker.pose.position.y = p.point.y
+                                marker.pose.position.z = p.point.z
+                                marker.pose.orientation.x = 0.0
+                                marker.pose.orientation.y = 0.0
+                                marker.pose.orientation.z = 0.0
+                                marker.pose.orientation.w = 1.0
+                                marker.scale.x = 0.1
+                                marker.scale.y = 0.1
+                                marker.scale.z = 0.1
+                                marker.color.a = 1.0 
+                                marker.color.r = 0.0
+                                marker.color.g = 1.0
+                                marker.color.b = 0.0
+                                marker.mesh_resource = "package://pr2_description/meshes/base_v0/base.dae"
+                                # markerArray.markers.append(marker)
+                                add_markerArray(marker)
+                                chair_counter+=1
                             breakout=1
                             break
 
+        
         draw(boxes_per_class, cv_image)
+        global pub
+        print("MarkerArray size: ", len(markerArray.markers))
+        # print(markerArray)
+        pub.publish(markerArray)
 
 
     cv2.waitKey(3)
@@ -175,13 +260,13 @@ def callback(data):
 def callback_pc(data):
     print("get depth image: ", str(data.header.stamp.secs))
     cv_depth = bridge.imgmsg_to_cv2(data, desired_encoding="16UC1")
-    pt = depth_to_xyz(cv_depth)
+    # pt = depth_to_xyz(cv_depth)
     global pointcloud_buffer
     global pointcloud_ts_buffer
     if len(pointcloud_buffer) == 5:
         pointcloud_buffer.pop()
         pointcloud_ts_buffer.pop()
-    pointcloud_buffer.append(pt)
+    pointcloud_buffer.append(cv_depth)
     pointcloud_ts_buffer.append(data.header.stamp.secs)
     # for y in range(480):
     #     for x in range(640):
@@ -196,6 +281,10 @@ def listener():
     rospy.init_node("listener", anonymous=True)
     rospy.Subscriber("/kinect2/qhd/image_color_rect", Image, callback, queue_size=3)
     rospy.Subscriber("/kinect2/qhd/image_depth_rect", Image, callback_pc, queue_size=3)
+    global pub 
+    pub = rospy.Publisher('chair', MarkerArray, queue_size=10)
+    global tflistener
+    tflistener = TransformListener()
     rospy.spin()
 
 def parse_args():
