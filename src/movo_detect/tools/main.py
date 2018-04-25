@@ -158,6 +158,7 @@ def add_markerArray(marker):
 
 
 def callback(data):
+    #process RGB image
     time_stamp = data.header.stamp.secs
     print("get one frame: ", str(time_stamp))
     cv_image = bridge.imgmsg_to_cv2(data, desired_encoding="passthrough")
@@ -196,6 +197,7 @@ def callback(data):
             if boxes_per_class[cls] == None:
                 continue
             for box in boxes_per_class[cls]:
+                #look at the 5X5 point around centroid, find out one has non zero depth and less than 4m far away
                 centroid_x = int(float(box[0]+box[2])/2)
                 centroid_y = int(float(box[1]+box[3])/2)
                 breakout = 0
@@ -205,7 +207,7 @@ def callback(data):
                         break
                     for j in range(max(centroid_y-2,0), min(centroid_y+2, height)):
                         x, y,z = depth_to_xyz(closest_pc[centroid_y, centroid_x], centroid_y, centroid_x)
-                        if z !=0:
+                        if z !=0 and z < 4:
                             if cls == 'chair':
                                 print(cls)
                                 print(x,y,z)
@@ -214,12 +216,11 @@ def callback(data):
                                 chair_point.point.x = z
                                 chair_point.point.y = y
                                 chair_point.point.z = x
-
+                                # transform the chair location to map frame
                                 p = tflistener.transformPoint("map", chair_point)
-                                # print(p)
 
+                                #create marker for the chair and check if we need to add it to global marker array
                                 marker = Marker()
-                                # marker.header.frame_id = "kinect2_ir_link"
                                 marker.header.frame_id = "map"
                                 marker.header.stamp = rospy.get_rostime()
                                 marker.ns = "my_namespace"
@@ -241,26 +242,25 @@ def callback(data):
                                 marker.color.g = 1.0
                                 marker.color.b = 0.0
                                 marker.mesh_resource = "package://pr2_description/meshes/base_v0/base.dae"
-                                # markerArray.markers.append(marker)
                                 add_markerArray(marker)
                                 chair_counter+=1
                             breakout=1
                             break
 
-        
+        #bbox visualization
         draw(boxes_per_class, cv_image)
+        #publish marker array
         global pub
         print("MarkerArray size: ", len(markerArray.markers))
-        # print(markerArray)
         pub.publish(markerArray)
 
 
     cv2.waitKey(3)
 
 def callback_pc(data):
+    #save depth image into buffer for future use
     print("get depth image: ", str(data.header.stamp.secs))
     cv_depth = bridge.imgmsg_to_cv2(data, desired_encoding="16UC1")
-    # pt = depth_to_xyz(cv_depth)
     global pointcloud_buffer
     global pointcloud_ts_buffer
     if len(pointcloud_buffer) == 5:
@@ -268,12 +268,6 @@ def callback_pc(data):
         pointcloud_ts_buffer.pop()
     pointcloud_buffer.append(cv_depth)
     pointcloud_ts_buffer.append(data.header.stamp.secs)
-    # for y in range(480):
-    #     for x in range(640):
-    #         print(cv_depth[y * 640 + x])
-    # print(data.header.stamp.secs)
-    #for point in sensor_msgs.point_cloud2.read_points(data, skip_nans=True):
-    #    print(point[0], point[1], point[2])
 
 
 def listener():
