@@ -92,6 +92,7 @@ def depth_to_xyz(depth, j, i):
     y = -(i - cy) * z /fy
     return(x,y,z)
 
+
 # def depth_to_xyz(depth_image):
 #     fx=540.68603515625
 #     fy=540.68603515625
@@ -103,7 +104,8 @@ def depth_to_xyz(depth, j, i):
 #     for j in range(height):
 #         for i in range(width):
 #             d = float(depth_image[j][i])/1000
-#             z = d
+#          
+   z = d
 #             x = (j - cx) * z /fx
 #             y = (i - cy) * z /fy
 #             pointcloud[j,i,0] = x

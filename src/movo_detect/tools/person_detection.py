@@ -69,13 +69,29 @@ def vis_detections(class_name, dets, thresh=0.5):
         bboxes.append(bbox)
 
     return bboxes
+
+
+def draw(boxes, im):
+     for key, value in boxes.iteritems():
+         if(value == None):
+            continue
+         for box in value:
+             if(key == 'person'):
+                cv2.rectangle(im, (box[0], box[1]), (box[2], box[3]), (255, 0, 0), 2)
+             else:
+                cv2.rectangle(im, (box[0], box[1]), (box[2], box[3]), (0, 255, 0), 2)
+                center_x = (box[0] + box[2])/2
+                center_y = (box[1] + box[3])/2
+
+                cv2.circle(im, (int(center_x), int(center_y)), 1, (0,255,0))
+     cv2.imshow("Image Window", im)
+
+
+
 def callback(data):
     #process RGB image
     time_stamp = data.header.stamp.secs
-    print("get one frame: ", str(time_stamp))
     cv_image = bridge.imgmsg_to_cv2(data, desired_encoding="passthrough")
-    print(cv_image.shape)
-    cv2.imshow("Image Window", cv_image)
     global sess
     global net
     global people_counter
@@ -87,6 +103,7 @@ def callback(data):
     for cls_ind, cls in enumerate(CLASSES[1:]):
         cls_ind += 1 # because we skipped background
         if(cls == 'person'):
+            # print('person detected')
             cls_boxes = boxes[:, 4*cls_ind:4*(cls_ind + 1)]
             cls_scores = scores[:, cls_ind]
             dets = np.hstack((cls_boxes, cls_scores[:, np.newaxis])).astype(np.float32)
@@ -99,12 +116,14 @@ def callback(data):
                 #look at the 5X5 point around centroid, find out one has non zero depth and less than 4m far away
                 centroid_x = int(float(box[0]+box[2])/2)
                 centroid_y = int(float(box[1]+box[3])/2)
-                if centroid_y > width/2 - 40 and centroid_y < width/2 + 40:
+                print(centroid_x, centroid_y)
+                if centroid_x > width/2 - 80 and centroid_x < width/2 + 80:
                 	people_counter += 1
 
-    print(people_counter)
+    print("people_counter: ", people_counter)
     global pub
     pub.publish(people_counter)
+    draw(boxes_per_class, cv_image)
 
     cv2.waitKey(3)
 

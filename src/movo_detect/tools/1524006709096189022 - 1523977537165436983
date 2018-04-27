@@ -1,0 +1,21 @@
+1524006709096189022 - 1523977537165436983
+1523977651
+29171930752039
+sudo ntpdate MOVO2
+
+
+
+roslaunch movo_remote_teleop movo_remote_teleop.launch
+roslaunch movo_demos mapping.launch
+roslaunch movo_viz view_robot.launch function:=mapping
+
+
+
+rosrun map_server map_saver -f mapname
+
+#quit mapping and rviz
+
+roslaunch movo_demos map_nav.launch map_file:=mapname
+
+roslaunch movo_viz view_robot.launch function:=map_nav
+
