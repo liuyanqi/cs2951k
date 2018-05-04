@@ -28,7 +28,9 @@ from cv_bridge import CvBridge, CvBridgeError
 
 import math
 from visualization_msgs.msg import MarkerArray
-from visualization_msgs.msg import Marker
+from marker import add_point
+from marker import add_text
+
 
 from tf import TransformListener 
 
@@ -105,7 +107,7 @@ def depth_to_xyz(depth, j, i):
 #         for i in range(width):
 #             d = float(depth_image[j][i])/1000
 #          
-   z = d
+#   z = d
 #             x = (j - cx) * z /fx
 #             y = (i - cy) * z /fy
 #             pointcloud[j,i,0] = x
@@ -130,7 +132,7 @@ def vis_detections(class_name, dets, thresh=0.5):
 
     return bboxes
 
-def draw(boxes, im):
+def draw(boxes, valid_chair_boxes, im):
      for key, value in boxes.iteritems():
          if(value == None):
             continue
@@ -143,9 +145,13 @@ def draw(boxes, im):
                 center_y = (box[1] + box[3])/2
 
                 cv2.circle(im, (int(center_x), int(center_y)), 1, (0,255,0))
+
+     for idx, chair in enumerate(valid_chair_boxes):
+        cv2.putText(im, 'Chair'+str(idx), (chair[0],chair[1]), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255, 0), 2)
+
      cv2.imshow("Image Window", im)
 
-def add_markerArray(marker):
+def add_markerArray(marker, marker_text):
     global markerArray
     find_similar = False
     for m in markerArray.markers:
@@ -156,6 +162,7 @@ def add_markerArray(marker):
             break
     if not find_similar:
         markerArray.markers.append(marker)
+        markerArray.markers.append(marker_text)
 
 
 
@@ -165,7 +172,6 @@ def callback(data):
     print("get one frame: ", str(time_stamp))
     cv_image = bridge.imgmsg_to_cv2(data, desired_encoding="passthrough")
     print(cv_image.shape)
-    cv2.imshow("Image Window", cv_image)
     global num_frames
     global sess
     global net
@@ -187,6 +193,7 @@ def callback(data):
     CONF_THRESH = 0.8
     NMS_THRESH = 0.3
     boxes_per_class = {}
+    valid_chair_box = []
     for cls_ind, cls in enumerate(CLASSES[1:]):
         cls_ind += 1 # because we skipped background
         if(cls == 'chair' or cls == 'person'):
@@ -203,18 +210,19 @@ def callback(data):
                 centroid_x = int(float(box[0]+box[2])/2)
                 centroid_y = int(float(box[1]+box[3])/2)
                 breakout = 0
-                for i in range(max(centroid_x-2, 0), min(centroid_x+2, width)):
+                for i in range(max(centroid_x-5, 0), min(centroid_x+5, width)):
                     if(breakout):
                         breakout = 0
                         break
-                    for j in range(max(centroid_y-2,0), min(centroid_y+2, height)):
+                    for j in range(max(centroid_y-5,0), min(centroid_y+5, height)):
                         x, y,z = depth_to_xyz(closest_pc[centroid_y, centroid_x], centroid_y, centroid_x)
                         if z !=0 and z < 4:
                             if cls == 'chair':
                                 print(cls)
                                 print(x,y,z)
+                                valid_chair_box.append(box)
                                 chair_point = PointStamped()
-                                chair_point.header.frame_id = "base_link"
+                                chair_point.header.frame_id = "kinect2_link"
                                 chair_point.point.x = z
                                 chair_point.point.y = y
                                 chair_point.point.z = x
@@ -222,38 +230,19 @@ def callback(data):
                                 p = tflistener.transformPoint("map", chair_point)
 
                                 #create marker for the chair and check if we need to add it to global marker array
-                                marker = Marker()
-                                marker.header.frame_id = "map"
-                                marker.header.stamp = rospy.get_rostime()
-                                marker.ns = "my_namespace"
-                                marker.id = len(markerArray.markers)
-                                marker.type = marker.SPHERE
-                                marker.action = marker.ADD
-                                marker.pose.position.x = p.point.x
-                                marker.pose.position.y = p.point.y
-                                marker.pose.position.z = p.point.z
-                                marker.pose.orientation.x = 0.0
-                                marker.pose.orientation.y = 0.0
-                                marker.pose.orientation.z = 0.0
-                                marker.pose.orientation.w = 1.0
-                                marker.scale.x = 0.1
-                                marker.scale.y = 0.1
-                                marker.scale.z = 0.1
-                                marker.color.a = 1.0 
-                                marker.color.r = 0.0
-                                marker.color.g = 1.0
-                                marker.color.b = 0.0
-                                marker.mesh_resource = "package://pr2_description/meshes/base_v0/base.dae"
-                                add_markerArray(marker)
+                                marker = add_point(frame_id="map", id_=len(markerArray.markers), x=p.point.x, y=p.point.y, scale=0.1, b=1)
+                                marker_text = add_text(frame_id="map", id_=len(markerArray.markers)+1, x=p.point.x, y=p.point.y, scale=0.2, b=1)
+                                add_markerArray(marker, marker_text)
                                 chair_counter+=1
                             breakout=1
                             break
 
+
         #bbox visualization
-        draw(boxes_per_class, cv_image)
+        draw(boxes_per_class, valid_chair_box, cv_image)
         #publish marker array
         global pub
-        print("MarkerArray size: ", len(markerArray.markers))
+        print("MarkerArray size: ", len(markerArray.markers)/2)
         pub.publish(markerArray)
 
 
